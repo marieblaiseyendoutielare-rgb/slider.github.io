@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Joyeux Anniversaire 🤍💙</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body{
+  margin:0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg,#0b3c5d,#1da1f2);
+  color:white;
+  overflow:hidden;
+}
+
+header{
+  text-align:center;
+  padding:20px;
+}
+
+header h1{
+  font-size:2.4em;
+  margin-bottom:5px;
+}
+
+header p{
+  opacity:0.9;
+}
+
+/* Slider */
+#slider{
+  display:flex;
+  width:100%;
+  height:80vh;
+  transition:transform 0.8s ease-in-out;
+}
+
+.slide{
+  min-width:100%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:30px;
+  padding:40px;
+  box-sizing:border-box;
+}
+
+.slide img{
+  width:40%;
+  max-width:350px;
+  border-radius:20px;
+  box-shadow:0 15px 40px rgba(0,0,0,0.4);
+}
+
+.text{
+  width:45%;
+  background:rgba(255,255,255,0.12);
+  padding:25px;
+  border-radius:20px;
+  backdrop-filter: blur(6px);
+}
+
+.text h2{
+  margin-top:0;
+}
+
+.verse{
+  margin-top:15px;
+  font-style:italic;
+  opacity:0.9;
+}
+
+/* Navigation */
+.nav{
+  position:fixed;
+  bottom:20px;
+  width:100%;
+  display:flex;
+  justify-content:center;
+  gap:20px;
+}
+
+button{
+  padding:10px 20px;
+  border:none;
+  border-radius:30px;
+  background:white;
+  color:#0b3c5d;
+  font-size:1em;
+  cursor:pointer;
+}
+
+/* Confettis */
+.confetti{
+  position:fixed;
+  top:-10px;
+  width:10px;
+  height:10px;
+  background:white;
+  animation:fall linear infinite;
+}
+
+@keyframes fall{
+  to{ transform:translateY(110vh) rotate(360deg); }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>🎉 Joyeux Anniversaire mon amour 🤍💙</h1>
+  <p>THE BEST IN THE WORLD AND IN MY HEART</p>
+</header>
+
+<!-- Musique -->
+<audio id="bg-music" loop>
+  <source src="musique.mp3" type="audio/mpeg">
+</audio>
+
+<!-- Bouton invisible pour lancer la musique -->
+<button id="start-btn" style="position:fixed;top:0;left:0;width:100vw;height:100vh;opacity:0;z-index:10000;cursor:pointer;"></button>
+
+<div id="slider">
+
+  <!-- SLIDE 1 -->
+  <div class="slide">
+    <img src="photo1.jpg">
+    <div class="text">
+      <h2>Joyeux anniversaire 🤍</h2>
+      <p>Aujourd’hui, je célèbre l’homme incroyable que tu es
+Mon amour,
+En ce jour spécial, je rends grâce à Dieu pour toi. Ta présence dans ma vie est un vrai cadeau. Chaque sourire, chaque mot que tu partages avec moi me rappelle combien je suis bénie. Merci d’être toi, pur et aimant. Joyeux anniversaire, mon trésor. Que Dieu continue de guider chacun de tes pas.</p>
+      <div class="verse">
+        « Que l’Éternel te bénisse et te garde ! » – Nombres 6:24-26
+      </div>
+    </div>
+  </div>
+
+  <!-- SLIDE 2 -->
+  <div class="slide">
+    <img src="photo2.jpg">
+    <div class="text">
+      <h2>Une année de plus, une grâce de plus</h2>
+      <p>Meine Liebe,
+
+heute denke ich an all die Momente zurück, die wir geteilt haben. Unser Lachen, unsere Gebete, unsere Träume … all das zeigt mir, wie kostbar unsere Liebe ist. Ich wünsche dir ein Jahr voller Frieden, Freude und göttlichem Segen. Ich liebe dich mehr denn je.</p>
+      <div class="verse">
+        « Je suis persuadé que celui qui a commencé en vous cette bonne œuvre la rendra parfaite pour le jour de Jésus-Christ. » – Philippiens 1:6
+      </div>
+    </div>
+  </div>
+
+  <!-- SLIDE 3 -->
+  <div class="slide">
+    <img src="photo3.jpg">
+    <div class="text">
+      <h2>Tu es une bénédiction</h2>
+      <p>Mon amour,
+Pour ton anniversaire, ma prière est simple : que Dieu te protège, t’inspire et t’accompagne dans chacun de tes projets. Que chaque jour te rapproche davantage de tes rêves et que notre amour continue de grandir dans la foi. Joyeux anniversaire, mon ange.</p>
+      <div class="verse">
+        « Je puis tout par celui qui me fortifie. » – Philippiens 4:13
+      </div>
+    </div>
+  </div>
+
+  <!-- SLIDE 4 -->
+  <div class="slide">
+    <img src="photo4.jpg">
+    <div class="text">
+      <h2>Mon soutien, mon pilier</h2>
+      <p>Mein Schatz,
+
+ich bin so stolz auf dich. Dein Glaube, deine Güte und deine Aufrichtigkeit berühren mich tief. Heute feiere ich nicht nur deinen Geburtstag, sondern auch den wundervollen Menschen, der du bist. Möge Gott dich auf deinem Weg begleiten.</p>
+      <div class="verse">
+        « Deux valent mieux qu’un. » – Ecclésiaste 4:9
+      </div>
+    </div>
+  </div>
+
+  <!-- SLIDE 5 -->
+  <div class="slide">
+    <img src="photo5.jpg">
+    <div class="text">
+      <h2>Continue de rêver grand</h2>
+      <p>Mon cœur,
+Chaque moment passé avec toi est un cadeau de Dieu. Ton rire réchauffe mon âme, tes paroles m’inspirent. Je remercie le Seigneur pour notre amour et je promets de toujours marcher à tes côtés, dans la joie et la foi. Joyeux anniversaire,</p>
+      <div class="verse">
+        « Car je connais les projets que j’ai formés sur vous. » – Jérémie 29:11
+      </div>
+    </div>
+  </div>
+
+  <!-- SLIDE 6 -->
+  <div class="slide">
+    <img src="photo6.jpg">
+    <div class="text">
+      <h2>OM un jour, OM toujours</h2>
+      <p>Mein Schatz,
+heute denke ich an unsere gemeinsame Zukunft. Ich bete, dass Gott uns führt, uns beschützt und unsere Liebe stärkt. Möge jeder Schritt deines Lebens gesegnet sein und ich immer von ganzem Herzen für dich da sein. Alles Gute zum Geburtstag, mein Schatz.</p>
+      <div class="verse">
+        « Soyez forts et courageux. » – Josué 1:9
+      </div>
+    </div>
+  </div>
+
+  <!-- SLIDE 7 -->
+  <div class="slide">
+    <img src="photo7.jpg">
+    <div class="text">
+      <h2>Merci d’être toi</h2>
+      <p>Mon ange,
+Il est incroyable de voir combien tu rends ma vie belle. Ton amour est un vrai miracle pour moi, un cadeau que Dieu m’a offert. Pour ton anniversaire, je te souhaite la plus belle année, pleine de joie, de paix et de bénédictions. Je t’aime infiniment.</p>
+      <div class="verse">
+        « Nous aimons parce qu’il nous a aimés le premier. » – 1 Jean 4:19
+      </div>
+    </div>
+  </div>
+
+  <!-- SLIDE 8 -->
+  <div class="slide">
+    <img src="photo8.jpg">
+    <div class="text">
+      <h2>Une histoire qui continue</h2>
+      <p>Meine Liebe,
+Meine Liebe,
+jeder Tag an deiner Seite ist ein Geschenk des Glücks und des Vertrauens. Dein Lächeln, deine Zärtlichkeit, dein treues Herz … alles erinnert mich daran, wie glücklich ich bin. Möge dieser neue Jahrestag dir genauso viel Freude bringen, wie du meinem Leben schenkst.</p>
+      <div class="verse">
+        « L’Éternel accomplira ses desseins pour moi. » – Psaume 138:8
+      </div>
+    </div>
+  </div>
+
+  <!-- SLIDE 9 -->
+  <div class="slide">
+    <img src="photo9.jpg">
+    <div class="text">
+      <h2>Je prie pour toi</h2>
+      <p>Mon trésor,
+Tu es fort, généreux et rempli de lumière. En ce jour, je prie pour que Dieu te donne courage, sagesse et succès dans tout ce que tu entreprends. Je suis à tes côtés pour t’aimer et te soutenir, dans la foi et la joie. Joyeux anniversaire, mon amour.</p>
+      <div class="verse">
+        « Que l’Éternel te bénisse et te garde. » – Nombres 6:24
+      </div>
+    </div>
+  </div>
+
+  <!-- SLIDE 10 -->
+  <div class="slide">
+    <img src="photo10.jpg">
+    <div class="text">
+      <h2>Joyeux anniversaire 🤍💙</h2>
+      <p>Danke, dass es dich gibt, danke, dass du das Leben deiner Lieben und besonders meines bereicherst. Alles Gute zum Geburtstag! MEIN FLUFIBUFFI</p>
+      <div class="verse">
+        « L’amour ne périt jamais. » – 1 Corinthiens 13:8
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="nav">
+  <button onclick="prev()">⬅ Précédent</button>
+  <button onclick="next()">Suivant ➡</button>
+</div>
+
+<script>
+let index = 0;
+const slider = document.getElementById("slider");
+
+function update(){
+  slider.style.transform = `translateX(-${index*100}%)`;
+}
+
+function next(){
+  if(index < 9){ index++; update(); }
+}
+
+function prev(){
+  if(index > 0){ index--; update(); }
+}
+
+/* Confettis */
+for(let i=0;i<80;i++){
+  const c = document.createElement("div");
+  c.className="confetti";
+  c.style.left=Math.random()*100+"vw";
+  c.style.animationDuration=(3+Math.random()*5)+"s";
+  c.style.opacity=Math.random();
+  document.body.appendChild(c);
+}
+
+/* Musique autoplay après premier clic */
+const audio = document.getElementById("bg-music");
+const startBtn = document.getElementById("start-btn");
+
+startBtn.addEventListener("click", () => {
+  audio.play();
+  startBtn.style.display = "none"; // retire le bouton invisible
+});
+</script>
+
+</body>
+</html>
